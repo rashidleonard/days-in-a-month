@@ -2,6 +2,8 @@ print("Days In A Month")
 
 year = int(input("Enter the year: \n"))
 month = int(input("Enter the month: \n"))
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+          "October", "November", "December"]
 
 
 def is_leap(year):
@@ -28,6 +30,7 @@ def days_in_month(year, month):
 
 
 days = days_in_month(year, month)
-print(f"the number of days in this month is: {days}")
+s_month = months[month - 1]  # specific month
+print(f"The number of days in {s_month} of the year {year} is: {days}")
 
 # testing
